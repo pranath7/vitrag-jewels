@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { animate } from 'animejs';
-import { Sparkles, Copy, CheckCircle2, Gift, Send, ShieldCheck, Phone, Mail, User, Heart } from 'lucide-react';
+import { Sparkles, Copy, CheckCircle2, Gift, Send, ShieldCheck, Phone, Mail, User } from 'lucide-react';
 
 export default function VipForm({ onSubmitted }) {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    whatsapp: '',
-    category: 'Bridal Kundan & Polki Sets'
+    whatsapp: ''
   });
 
   const [submittedVoucher, setSubmittedVoucher] = useState(null);
@@ -51,7 +50,7 @@ export default function VipForm({ onSubmitted }) {
       fullName: formData.fullName,
       email: formData.email,
       whatsapp: formData.whatsapp,
-      category: formData.category,
+      category: 'VIP Launch Member',
       voucherCode: randomCode,
       date: new Date().toLocaleDateString('en-IN', {
         day: 'numeric',
@@ -183,30 +182,11 @@ export default function VipForm({ onSubmitted }) {
                 </div>
               </div>
 
-              {/* Category Preference */}
-              <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-[#E6C687] mb-1.5 flex items-center gap-1.5 font-fontfabric-tenor">
-                  <Heart className="w-3.5 h-3.5 text-[#D4AF37]" />
-                  <span>Favorite Jewelry Style *</span>
-                </label>
-                <select
-                  name="category"
-                  value={formData.category}
-                  onChange={handleChange}
-                  className="w-full bg-[#051310] border border-[#D4AF37]/25 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all font-fontfabric-sans shadow-inner"
-                >
-                  <option value="Bridal Kundan & Polki Sets">Bridal Kundan & Uncut Polki Replicas</option>
-                  <option value="Anti-Tarnish Everyday Wear">Anti-Tarnish & Waterproof Daily Wear</option>
-                  <option value="High-Polish Heritage Gold Finish">High-Polish Heritage Gold Finish Masterpieces</option>
-                  <option value="CZ Solitaires & Party Glam">CZ Solitaires & Western Statement Pieces</option>
-                </select>
-              </div>
-
               {/* Submit Button */}
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full gold-gradient-bg text-[#050C0A] font-bold text-xs py-3.5 rounded-xl shadow-xl shadow-[#D4AF37]/20 hover:shadow-[#D4AF37]/40 hover:scale-[1.01] transition-all flex items-center justify-center gap-2 uppercase tracking-widest cursor-pointer disabled:opacity-50 font-fontfabric-tenor"
+                className="w-full gold-gradient-bg text-[#050C0A] font-bold text-xs py-3.5 rounded-xl shadow-xl shadow-[#D4AF37]/20 hover:shadow-[#D4AF37]/40 hover:scale-[1.01] transition-all flex items-center justify-center gap-2 uppercase tracking-widest cursor-pointer disabled:opacity-50 font-fontfabric-tenor mt-4"
               >
                 {isSubmitting ? (
                   <span>GENERATING YOUR 20% VOUCHER...</span>
