@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, Sparkles, Heart } from 'lucide-react';
+import { Mail, Sparkles, Heart } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 
 export default function Footer({ onOpenAdmin }) {
@@ -80,10 +80,6 @@ export default function Footer({ onOpenAdmin }) {
               <p className="text-[#E6C687]/70 flex items-center gap-1.5">
                 <Mail className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>contact@vitragjewels.store</span>
-              </p>
-              <p className="text-[#E6C687]/70 flex items-center gap-1.5">
-                <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>+91 98765 43210</span>
               </p>
             </div>
           </div>

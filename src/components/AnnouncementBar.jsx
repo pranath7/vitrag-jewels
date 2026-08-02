@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Phone, Mail } from 'lucide-react';
+import { Sparkles, Mail } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 
 export default function AnnouncementBar() {
@@ -8,10 +8,6 @@ export default function AnnouncementBar() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
         {/* Contact info left */}
         <div className="hidden md:flex items-center space-x-6 text-xs text-[#E6C687]/80">
-          <a href="tel:+919876543210" className="flex items-center gap-1.5 hover:text-[#D4AF37] transition-colors">
-            <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-            <span>+91 98765 43210</span>
-          </a>
           <a href="mailto:contact@vitragjewels.store" className="flex items-center gap-1.5 hover:text-[#D4AF37] transition-colors">
             <Mail className="w-3.5 h-3.5 text-[#D4AF37]" />
             <span>contact@vitragjewels.store</span>
