@@ -19,7 +19,7 @@ export default function AnnouncementBar() {
           <span className="inline-flex items-center gap-1.5 bg-[#D4AF37]/15 border border-[#D4AF37]/30 px-3 py-0.5 rounded-full">
             <Sparkles className="w-3 h-3 text-[#D4AF37] animate-pulse" />
             <span className="gold-gradient-text uppercase tracking-widest text-[10px] font-bold">
-              GRAND SHOWROOM & DIGITAL LAUNCH: MARCH 2027 • PRE-REGISTER FOR 20% OFF
+              GRAND DIGITAL LAUNCH: MARCH 2027 • PRE-REGISTER FOR 20% OFF
             </span>
           </span>
         </div>

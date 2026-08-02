@@ -63,7 +63,7 @@ export default function Footer({ onOpenAdmin }) {
           {/* Contact & Launch Info */}
           <div className="space-y-3">
             <h4 className="font-fontfabric-tenor text-xs font-bold text-white uppercase tracking-widest">
-              SHOWROOM LAUNCH
+              GRAND LAUNCH
             </h4>
             <div className="space-y-2 text-xs">
               <p className="text-white font-semibold flex items-center gap-1.5">

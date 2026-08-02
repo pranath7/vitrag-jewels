@@ -75,14 +75,14 @@ export default function HeroSection({ onPreRegisterClick, onExploreReelsClick })
         <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#050C0A] via-[#050C0A]/60 to-transparent pointer-events-none" />
       </div>
 
-      {/* 2. Dedicated Text & Countdown Banner (Bklit UI Minimalist Style) */}
+      {/* 2. Dedicated Text & Countdown Banner */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center relative z-10">
         
-        {/* Bklit Status Badge */}
+        {/* Status Badge */}
         <div className="inline-flex items-center space-x-2 bg-[#091F1A] border border-[#D4AF37]/35 px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-md shadow-lg">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <span className="font-fontfabric-tenor text-xs font-semibold text-[#F3E5AB]">
-            GRAND SHOWROOM LAUNCH: MARCH 2027
+            GRAND DIGITAL LAUNCH: MARCH 2027
           </span>
         </div>
 
@@ -97,12 +97,12 @@ export default function HeroSection({ onPreRegisterClick, onExploreReelsClick })
           “Indulge in Designer Kundan, Uncut Polki Replicas, CZ Solitaires & Anti-Tarnish Daily Wear Masterpieces. Pure Luxury Without Compromise.”
         </p>
 
-        {/* Live Ticking March 2027 Countdown Timer (Bklit Card Style) */}
+        {/* Live Ticking March 2027 Countdown Timer */}
         <div className="w-full max-w-xl glass-panel rounded-2xl p-6 sm:p-8 mb-10 border border-[#D4AF37]/30 shadow-2xl relative overflow-hidden">
           
           <div className="flex items-center justify-center space-x-2 font-fontfabric-tenor text-xs font-semibold text-[#D4AF37] mb-5">
             <Clock className="w-4 h-4 text-[#D4AF37]" />
-            <span>COUNTDOWN TO MARCH 2027 LAUNCH</span>
+            <span>COUNTDOWN TO MARCH 2027 DIGITAL LAUNCH</span>
           </div>
 
           <div className="grid grid-cols-4 gap-3 sm:gap-5 text-center font-fontfabric-sans">
