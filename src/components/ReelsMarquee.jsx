@@ -12,7 +12,7 @@ const REELS_DATA = [
     comments: "1,240",
     views: "520K",
     caption: "One of these is ₹2,50,000 pure gold Polki. The other is ₹1,999 from Vitrag Jewels! Comment A or B below! 👇",
-    thumbnail: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80",
+    thumbnail: "/reels/reel-1.jpg",
     audio: "Original Audio — @vitrag.jewels (Trending)",
     tags: ["#RealVsFake", "#ImitationJewellery", "#VitragJewels"]
   },
@@ -25,7 +25,7 @@ const REELS_DATA = [
     comments: "890",
     views: "740K",
     caption: "Sprayed with perfume, submerged in water for 24 hours. Zero tarnish! Daily wear anti-tarnish guarantee. 💧✨",
-    thumbnail: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80",
+    thumbnail: "/reels/reel-2.jpg",
     audio: "Aesthetic Ambient Luxury — @vitrag.jewels",
     tags: ["#AntiTarnish", "#WaterproofJewelry", "#GoldPlated"]
   },
@@ -38,7 +38,7 @@ const REELS_DATA = [
     comments: "2,100",
     views: "1.2M",
     caption: "Deepika's Wedding Choker (₹50 Lakhs) vs Vitrag Jewels Replica (₹2,499). Which bride are you choosing? 👑💍",
-    thumbnail: "https://images.unsplash.com/photo-1611591475281-b1c9441113b2?auto=format&fit=crop&w=600&q=80",
+    thumbnail: "/reels/reel-3.jpg",
     audio: "Kudmayaa (Wedding Instrumental)",
     tags: ["#BridalJewellery", "#BollywoodLook", "#ChokerSet"]
   },
@@ -51,7 +51,7 @@ const REELS_DATA = [
     comments: "540",
     views: "390K",
     caption: "1 Choker, 3 Outfits: Saree, Lehenga & Indo-Western! Save this reel for your next wedding event! 📌✨",
-    thumbnail: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80",
+    thumbnail: "/reels/reel-4.jpg",
     audio: "Fashion Styling Beat — @vitrag.jewels",
     tags: ["#JewelryStyling", "#SareeOutfit", "#LehengaStyle"]
   },
@@ -64,7 +64,7 @@ const REELS_DATA = [
     comments: "720",
     views: "610K",
     caption: "Satisfying ASMR close-up of setting uncut stones into golden frames. Masterpieces take patience. 🛠️💎",
-    thumbnail: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80",
+    thumbnail: "/reels/reel-5.jpg",
     audio: "Craftsmanship ASMR Audio",
     tags: ["#HandcraftedJewelry", "#PolkiSetting", "#Artisans"]
   },
@@ -77,7 +77,7 @@ const REELS_DATA = [
     comments: "410",
     views: "290K",
     caption: "Rubbing with metal cloth to prove our anti-tarnish golden polish stays intact. Built for generations. 👑✨",
-    thumbnail: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=600&q=80",
+    thumbnail: "/reels/reel-6.jpg",
     audio: "Luxury Beats — @vitrag.jewels",
     tags: ["#AntiTarnish", "#GoldBangles", "#VitragJewels"]
   }
@@ -142,7 +142,7 @@ export default function ReelsMarquee() {
                 onClick={() => setActiveReel(reel)}
                 className="w-72 sm:w-80 flex-shrink-0 glass-card rounded-xl overflow-hidden cursor-pointer group relative border border-[#D4AF37]/20"
               >
-                {/* Card Image Container with Elegant Fallback Background */}
+                {/* Card Image Container */}
                 <div className="relative h-96 w-full overflow-hidden bg-gradient-to-br from-[#0D2924] via-[#081814] to-[#040E0C]">
                   
                   {!hasFailed ? (
@@ -150,7 +150,7 @@ export default function ReelsMarquee() {
                       src={reel.thumbnail} 
                       alt="" 
                       onError={() => handleImageError(itemKey)}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90 contrast-105"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-95 contrast-105"
                     />
                   ) : (
                     /* Fallback Decorative Luxury Canvas */
@@ -170,7 +170,7 @@ export default function ReelsMarquee() {
                   {/* Dark Overlay Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050C0A] via-[#050C0A]/40 to-transparent pointer-events-none" />
 
-                  {/* Badge Top Left (Always Clean) */}
+                  {/* Badge Top Left */}
                   <div className="absolute top-3 left-3 bg-[#081814]/95 backdrop-blur-md border border-[#D4AF37]/40 px-2.5 py-0.5 rounded-full text-[10px] font-bold text-[#D4AF37] tracking-wider uppercase font-fontfabric-tenor shadow-md z-10">
                     {reel.badge}
                   </div>
