@@ -90,13 +90,20 @@ export default function AdminPage({ onBackToHome }) {
             <span>← Back to Main Website</span>
           </button>
 
-          <div className="text-center sm:text-right">
-            <h1 className="font-fontfabric-brand text-xl font-bold gold-gradient-text uppercase">
-              VITRAG JEWELS — ADMIN PORTAL
-            </h1>
-            <p className="text-[10px] text-[#E6C687]/70 uppercase tracking-[0.2em] font-fontfabric-tenor">
-              OWNER LEADS & WAITLIST DATABASE
-            </p>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/logo-light.png" 
+              alt="Vitrag Jewels Logo" 
+              className="h-10 w-auto object-contain"
+            />
+            <div className="text-left">
+              <h1 className="font-fontfabric-brand text-lg font-bold gold-gradient-text uppercase leading-none">
+                ADMIN PORTAL
+              </h1>
+              <p className="text-[9px] text-[#E6C687]/70 uppercase tracking-[0.2em] font-fontfabric-tenor mt-0.5">
+                OWNER LEADS DATABASE
+              </p>
+            </div>
           </div>
         </div>
 

@@ -29,28 +29,22 @@ export default function Navbar({ onNavigate }) {
     <header className="sticky top-2 z-40 px-3 transition-all duration-300">
       <div className={`max-w-6xl mx-auto rounded-2xl border transition-all duration-300 ${
         isScrolled 
-          ? 'bg-[#050C0A]/90 backdrop-blur-2xl border-[#D4AF37]/40 shadow-2xl py-2.5 px-5' 
-          : 'bg-[#050C0A]/75 backdrop-blur-md border-[#D4AF37]/25 py-3 px-6'
+          ? 'bg-[#050C0A]/95 backdrop-blur-2xl border-[#D4AF37]/40 shadow-2xl py-2 px-5' 
+          : 'bg-[#050C0A]/80 backdrop-blur-md border-[#D4AF37]/25 py-2.5 px-6'
       }`}>
         <div className="flex items-center justify-between">
           
-          {/* Bklit UI Brand Logo & Monogram with Active Green Dot */}
+          {/* Brand Official Logo Image & Monogram */}
           <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => scrollToSection('hero')}>
-            <div className="relative">
-              <div className="w-10 h-10 rounded-xl border border-[#D4AF37]/50 bg-[#091F1A] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                <span className="font-fontfabric-brand text-[#D4AF37] font-bold text-lg">VJ</span>
-              </div>
-              {/* Bklit UI Status Indicator Dot */}
-              <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#050C0A] animate-pulse" />
-            </div>
-            
-            <div>
-              <h1 className="font-fontfabric-brand text-lg font-bold tracking-wider gold-gradient-text uppercase leading-none">
-                VITRAG JEWELS
-              </h1>
-              <p className="font-fontfabric-tenor text-[8px] tracking-[0.25em] uppercase text-[#E6C687]/80 font-semibold mt-0.5">
-                FINE IMITATION JEWELRY
-              </p>
+            <div className="relative flex items-center">
+              {/* Official Brand Logo */}
+              <img 
+                src="/logo-light.png" 
+                alt="Vitrag Jewels Logo" 
+                className="h-11 sm:h-13 w-auto object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)] group-hover:scale-105 transition-transform duration-300"
+              />
+              {/* Active Green Status Dot */}
+              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#050C0A] animate-pulse" />
             </div>
           </div>
 
@@ -95,7 +89,7 @@ export default function Navbar({ onNavigate }) {
 
             <button 
               onClick={() => scrollToSection('vip-apply')} 
-              className="gold-gradient-bg text-[#050C0A] font-bold text-xs px-5 py-2 rounded-xl shadow-lg shadow-[#D4AF37]/20 hover:shadow-[#D4AF37]/40 hover:scale-105 transition-all flex items-center gap-1.5 uppercase tracking-widest cursor-pointer font-fontfabric-tenor"
+              className="gold-gradient-bg text-[#050C0A] font-bold text-xs px-5 py-2.5 rounded-xl shadow-lg shadow-[#D4AF37]/20 hover:shadow-[#D4AF37]/40 hover:scale-105 transition-all flex items-center gap-1.5 uppercase tracking-widest cursor-pointer font-fontfabric-tenor"
             >
               <Sparkles className="w-3.5 h-3.5 fill-current" />
               <span>Pre-Register (20% OFF)</span>

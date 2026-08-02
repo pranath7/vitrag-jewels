@@ -13,20 +13,13 @@ export default function Footer({ onOpenAdmin }) {
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="relative">
-                <div className="w-10 h-10 rounded-xl border border-[#D4AF37] bg-[#091F1A] flex items-center justify-center font-fontfabric-brand text-[#D4AF37] font-bold text-lg shadow-lg">
-                  VJ
-                </div>
-                <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              </div>
-
-              <div>
-                <h3 className="font-fontfabric-brand text-xl font-bold gold-gradient-text uppercase leading-none">
-                  VITRAG JEWELS
-                </h3>
-                <p className="text-[9px] tracking-[0.25em] text-[#E6C687]/80 uppercase mt-0.5 font-semibold font-fontfabric-tenor">
-                  FINE IMITATION JEWELRY
-                </p>
+              <div className="relative flex items-center">
+                <img 
+                  src="/logo-light.png" 
+                  alt="Vitrag Jewels Logo" 
+                  className="h-12 w-auto object-contain filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.3)]"
+                />
+                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               </div>
             </div>
 
