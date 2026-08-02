@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #050C0A;
+    color: #F3E5AB;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Bklit UI Signature Dot Matrix Background Pattern */
+.bklit-grid-pattern {
+  background-image: radial-gradient(circle, rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bklit-subtle-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
+}
+
+/* GPU Hardware Acceleration & Motion Helpers */
+.smooth-gpu {
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Fontfabric-Inspired Luxury Font Family Utility Classes */
+.font-fontfabric-brand {
+  font-family: 'Marcellus', serif;
+  letter-spacing: 0.12em;
+}
+
+.font-fontfabric-serif {
+  font-family: 'Prata', serif;
+  letter-spacing: -0.01em;
+}
+
+.font-fontfabric-vogue {
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: -0.02em;
+}
+
+.font-fontfabric-tenor {
+  font-family: 'Tenor Sans', sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.font-fontfabric-sans {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-editorial-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+/* Bklit UI Luxury Colors:
+   - Primary Dark: #050C0A
+   - Card Layer: #091F1A
+   - Border: rgba(212, 175, 55, 0.25)
+   - Accent Gold: #D4AF37
+   - Text Primary: #F3E5AB
+*/
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF8DC 0%, #F3E5AB 25%, #D4AF37 50%, #B8860B 80%, #F5E8C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 50%, #8B6508 100%);
+}
+
+/* Bklit UI Glass & Card Components */
+.glass-panel {
+  background: rgba(9, 31, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+}
+
+.glass-card {
+  background: rgba(12, 36, 30, 0.6);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+.glass-card:hover {
+  background: rgba(16, 46, 38, 0.9);
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(212, 175, 55, 0.25);
+  transform: translate3d(0, -4px, 0);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050C0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A483F;
+  border-radius: 4px;
+  border: 1px solid #D4AF37;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* GPU Accelerated Butter-Smooth Marquee Ticker */
+@keyframes infiniteMarqueeGPU {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee-scroll {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: infiniteMarqueeGPU 38s linear infinite;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.animate-marquee-scroll:hover {
+  animation-play-state: paused;
+}
