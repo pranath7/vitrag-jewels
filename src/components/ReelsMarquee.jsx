@@ -5,16 +5,16 @@ import InstagramIcon from './InstagramIcon';
 const REELS_DATA = [
   {
     id: 1,
-    title: "Real vs. Vitrag Jewels Test",
+    title: "Real vs. Parsh Jewels Test",
     badge: "VIRAL HOOK",
     category: "Guessing Game",
     likes: "48.2K",
     comments: "1,240",
     views: "520K",
-    caption: "One of these is ₹2,50,000 pure gold Polki. The other is ₹1,999 from Vitrag Jewels! Comment A or B below! 👇",
+    caption: "One of these is ₹2,50,000 pure gold Polki. The other is ₹1,999 from Parsh Jewels! Comment A or B below! 👇",
     thumbnail: "/reels/reel-1.jpg",
-    audio: "Original Audio — @vitrag.jewels (Trending)",
-    tags: ["#RealVsFake", "#ImitationJewellery", "#VitragJewels"]
+    audio: "Original Audio — @parsh.jewels (Trending)",
+    tags: ["#RealVsFake", "#ImitationJewellery", "#ParshJewels"]
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const REELS_DATA = [
     views: "740K",
     caption: "Sprayed with perfume, submerged in water for 24 hours. Zero tarnish! Daily wear anti-tarnish guarantee. 💧✨",
     thumbnail: "/reels/reel-2.jpg",
-    audio: "Aesthetic Ambient Luxury — @vitrag.jewels",
+    audio: "Aesthetic Ambient Luxury — @parsh.jewels",
     tags: ["#AntiTarnish", "#WaterproofJewelry", "#GoldPlated"]
   },
   {
@@ -37,7 +37,7 @@ const REELS_DATA = [
     likes: "95.1K",
     comments: "2,100",
     views: "1.2M",
-    caption: "Deepika's Wedding Choker (₹50 Lakhs) vs Vitrag Jewels Replica (₹2,499). Which bride are you choosing? 👑💍",
+    caption: "Deepika's Wedding Choker (₹50 Lakhs) vs Parsh Jewels Replica (₹2,499). Which bride are you choosing? 👑💍",
     thumbnail: "/reels/reel-3.jpg",
     audio: "Kudmayaa (Wedding Instrumental)",
     tags: ["#BridalJewellery", "#BollywoodLook", "#ChokerSet"]
@@ -52,7 +52,7 @@ const REELS_DATA = [
     views: "390K",
     caption: "1 Choker, 3 Outfits: Saree, Lehenga & Indo-Western! Save this reel for your next wedding event! 📌✨",
     thumbnail: "/reels/reel-4.jpg",
-    audio: "Fashion Styling Beat — @vitrag.jewels",
+    audio: "Fashion Styling Beat — @parsh.jewels",
     tags: ["#JewelryStyling", "#SareeOutfit", "#LehengaStyle"]
   },
   {
@@ -78,8 +78,8 @@ const REELS_DATA = [
     views: "290K",
     caption: "Rubbing with metal cloth to prove our anti-tarnish golden polish stays intact. Built for generations. 👑✨",
     thumbnail: "/reels/reel-6.jpg",
-    audio: "Luxury Beats — @vitrag.jewels",
-    tags: ["#AntiTarnish", "#GoldBangles", "#VitragJewels"]
+    audio: "Luxury Beats — @parsh.jewels",
+    tags: ["#AntiTarnish", "#GoldBangles", "#ParshJewels"]
   }
 ];
 
@@ -110,7 +110,7 @@ export default function ReelsMarquee() {
         <div className="inline-flex items-center space-x-2 bg-[#091F1A] border border-[#D4AF37]/30 px-3.5 py-1 rounded-full mb-3 shadow-md">
           <InstagramIcon className="w-3.5 h-3.5 text-[#D4AF37]" />
           <span className="font-fontfabric-tenor text-xs font-semibold uppercase tracking-widest text-[#F3E5AB]">
-            @VITRAG.JEWELS VIRAL REELS
+            @PARSH.JEWELS VIRAL REELS
           </span>
         </div>
 
@@ -159,7 +159,7 @@ export default function ReelsMarquee() {
                         <Gem className="w-8 h-8 text-[#D4AF37]" />
                       </div>
                       <span className="font-fontfabric-brand text-[#D4AF37] font-bold text-sm tracking-wider uppercase">
-                        VITRAG JEWELS
+                        PARSH JEWELS
                       </span>
                       <span className="text-[10px] text-[#E6C687]/70 font-fontfabric-tenor tracking-widest uppercase mt-1">
                         REEL PREVIEW
@@ -186,7 +186,7 @@ export default function ReelsMarquee() {
                   <div className="absolute bottom-0 left-0 right-0 p-4 space-y-1.5 z-10">
                     <div className="flex items-center space-x-2 text-xs text-[#D4AF37] font-fontfabric-tenor">
                       <InstagramIcon className="w-3.5 h-3.5" />
-                      <span className="font-semibold text-[11px]">@vitrag.jewels</span>
+                      <span className="font-semibold text-[11px]">@parsh.jewels</span>
                     </div>
 
                     <h3 className="font-fontfabric-serif font-bold text-white text-base leading-tight group-hover:text-[#D4AF37] transition-colors">
@@ -250,16 +250,16 @@ export default function ReelsMarquee() {
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-white">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 rounded-lg border border-[#D4AF37] bg-[#0D2924] flex items-center justify-center font-bold text-[#D4AF37] font-fontfabric-brand">
-                    VJ
+                    PJ
                   </div>
                   <div className="font-fontfabric-tenor">
-                    <p className="font-bold">@vitrag.jewels</p>
+                    <p className="font-bold">@parsh.jewels</p>
                     <p className="text-[10px] text-[#E6C687]">{activeReel.audio}</p>
                   </div>
                 </div>
 
                 <a 
-                  href="https://instagram.com/vitrag.jewels" 
+                  href="https://instagram.com/parsh.jewels" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="gold-gradient-bg text-[#050C0A] font-bold px-3.5 py-1 rounded-xl text-[10px] flex items-center gap-1 font-fontfabric-tenor shadow-md"
@@ -305,7 +305,7 @@ export default function ReelsMarquee() {
                 </div>
 
                 <a
-                  href="https://instagram.com/vitrag.jewels"
+                  href="https://instagram.com/parsh.jewels"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-[#D4AF37] font-semibold hover:underline flex items-center gap-1 font-fontfabric-tenor"

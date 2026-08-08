@@ -40,7 +40,7 @@ export default function Navbar({ onNavigate }) {
               {/* Official Brand Logo */}
               <img 
                 src="/logo-light.png" 
-                alt="Vitrag Jewels Logo" 
+                alt="Parsh Jewels Logo" 
                 className="h-11 sm:h-13 w-auto object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)] group-hover:scale-105 transition-transform duration-300"
               />
               {/* Active Green Status Dot */}
@@ -78,11 +78,11 @@ export default function Navbar({ onNavigate }) {
           {/* Bklit Action Buttons Right */}
           <div className="hidden sm:flex items-center space-x-3 font-fontfabric-sans">
             <a
-              href="https://instagram.com/vitrag.jewels"
+              href="https://instagram.com/parsh.jewels"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-xl border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#050C0A] transition-all"
-              title="Follow @vitrag.jewels on Instagram"
+              title="Follow @parsh.jewels on Instagram"
             >
               <InstagramIcon className="w-4 h-4" />
             </a>

@@ -44,7 +44,7 @@ export default function VipForm({ onSubmitted }) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const randomCode = `VITRAG20-VIP-${Math.floor(1000 + Math.random() * 9000)}`;
+    const randomCode = `PARSH20-VIP-${Math.floor(1000 + Math.random() * 9000)}`;
     const newEntry = {
       id: Date.now(),
       fullName: formData.fullName,
@@ -62,9 +62,9 @@ export default function VipForm({ onSubmitted }) {
     };
 
     try {
-      const existing = JSON.parse(localStorage.getItem('vitrag_waitlist_entries') || '[]');
+      const existing = JSON.parse(localStorage.getItem('parsh_waitlist_entries') || '[]');
       existing.unshift(newEntry);
-      localStorage.setItem('vitrag_waitlist_entries', JSON.stringify(existing));
+      localStorage.setItem('parsh_waitlist_entries', JSON.stringify(existing));
     } catch (err) {
       console.error('LocalStorage write error:', err);
     }
@@ -219,7 +219,7 @@ export default function VipForm({ onSubmitted }) {
                   CONGRATULATIONS, {formData.fullName.toUpperCase()}!
                 </h3>
                 <p className="text-xs text-[#E6C687]/80 mt-1">
-                  You are officially on the Vitrag Jewels VIP Waitlist for March 2027.
+                  You are officially on the Parsh Jewels VIP Waitlist for March 2027.
                 </p>
               </div>
 
@@ -249,7 +249,7 @@ export default function VipForm({ onSubmitted }) {
               </div>
 
               <div className="text-[11px] text-[#E6C687]/70 space-y-1">
-                <p>• Valid for your first purchase at launch on <strong className="text-white">app.vitragjewels.store</strong></p>
+                <p>• Valid for your first purchase at launch on <strong className="text-white">app.parshjewels.store</strong></p>
                 <p>• A copy has been reserved for <span className="text-[#D4AF37]">{formData.email}</span></p>
               </div>
 

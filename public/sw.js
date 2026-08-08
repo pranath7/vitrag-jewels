@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vitrag-jewels-offline-v1';
+const CACHE_NAME = 'parsh-jewels-offline-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -9,7 +9,7 @@ const ASSETS_TO_CACHE = [
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log('[ServiceWorker] Pre-caching hero video and offline assets');
+      console.log('[ServiceWorker] Pre-caching hero video and offline assets for Parsh Jewels');
       return cache.addAll(ASSETS_TO_CACHE).catch((err) => {
         console.warn('[ServiceWorker] Pre-cache partial failure:', err);
       });
