@@ -49,12 +49,20 @@ export default function Navbar({ onNavigate }) {
           </div>
 
           {/* Minimal Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-8 font-fontfabric-tenor text-xs font-semibold uppercase">
+          <nav className="hidden lg:flex items-center space-x-7 font-fontfabric-tenor text-xs font-semibold uppercase">
             <button 
               onClick={() => scrollToSection('hero')} 
               className="text-[#F3E5AB] hover:text-[#D4AF37] transition-colors relative py-1 group"
             >
               HOME
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+            </button>
+
+            <button 
+              onClick={() => scrollToSection('palettes')} 
+              className="text-[#F3E5AB]/80 hover:text-[#D4AF37] transition-colors relative py-1 group"
+            >
+              COLOR PALETTES
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
             </button>
 
@@ -116,6 +124,12 @@ export default function Navbar({ onNavigate }) {
               className="block text-left w-full text-xs font-semibold tracking-wider text-[#F3E5AB] uppercase py-2 border-b border-[#D4AF37]/10"
             >
               HOME
+            </button>
+            <button 
+              onClick={() => scrollToSection('palettes')} 
+              className="block text-left w-full text-xs font-semibold tracking-wider text-[#F3E5AB]/80 uppercase py-2 border-b border-[#D4AF37]/10"
+            >
+              COLOR PALETTES
             </button>
             <button 
               onClick={() => scrollToSection('reels')} 

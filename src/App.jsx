@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AnnouncementBar from './components/AnnouncementBar';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
+import ColorPaletteShowcase from './components/ColorPaletteShowcase';
 import ReelsMarquee from './components/ReelsMarquee';
 import VipForm from './components/VipForm';
 import AdminPage from './components/AdminPage';
@@ -54,21 +55,24 @@ export default function App() {
       {/* Main Content Sections */}
       <main className="flex-1">
         
-        {/* 3. Pure Hero Video & Below-Video Luxury Text Banner (No text overlaying video directly!) */}
+        {/* 3. Pure Hero Video & Below-Video Luxury Text Banner */}
         <HeroSection 
           onPreRegisterClick={() => scrollToId('vip-apply')}
           onExploreReelsClick={() => scrollToId('reels')}
         />
 
-        {/* 4. Infinite Horizontal Scrolling Instagram Reels Marquee */}
+        {/* 4. Interactive Brand Color Palette Strips */}
+        <ColorPaletteShowcase />
+
+        {/* 5. Infinite Horizontal Scrolling Instagram Reels Marquee */}
         <ReelsMarquee />
 
-        {/* 5. VIP Pre-Registration & 20% OFF Voucher Form */}
+        {/* 6. VIP Pre-Registration & 20% OFF Voucher Form */}
         <VipForm onSubmitted={() => {}} />
 
       </main>
 
-      {/* 6. Minimal Luxury Footer */}
+      {/* 7. Minimal Luxury Footer */}
       <Footer onOpenAdmin={() => navigateTo('admin')} />
 
     </div>
